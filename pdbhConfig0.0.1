@@ -1,0 +1,75 @@
+# Main config file for PDBH
+# Find out more here: https://
+Output:
+  # Terminal outputs
+
+  pdbhPrefix: "[PDBH] "
+  # The prefix before every PDBH message, this can be blank.
+  # Default: "[PDBH] "
+  # Example: "[PDBH] Wrote data to database"
+
+  
+  pdbhOutputsInfo: True
+  # Should PDBH output generic information to the terminal
+  # If Log.pdbhLogs is True they will also appear there
+  # Default: True
+  # Example: "[PDBH] Wrote data to database"
+
+  
+  pdbhOutputsWarnings: True
+  # Should PDBH output warnings to the terminal
+  # If Log.pdbhLogs is True they will also appear there
+  # Default: True
+  # Example: "[PDBH] Database already exists"
+
+  
+  pdbhOutputsErrors: True
+  # Should PDBH output errors to the terminal, I highly suggest this is True
+  # If Log.pdbhLogs is True they will also appear there
+  # Default: True
+  # Example: "[PDBH] Database is corrupted"
+
+
+Log:
+  pdbhLogs: True
+  # Should PDBH log all messages to a file
+  # Info,Error & Warning settings are ignored, all messages will log if this is True
+  # Default: True
+
+  
+  pdbhLogFile: "PDBH.log"
+  # Where should PDBH log to, this setting depends on Log.pdbhLogs
+  # I would suggest leaving this as default as it is unique enough
+  # Default: "PDBH.log"
+
+
+Database:
+  pdbhGhost: False
+  # If True PDBH will not write to databases, useful for testing out functions.
+  # Instead of writing to databases it will be outputted to Terminal & Log as an INFO
+  # Default: False
+
+  
+  pdbhDatabaseDirectoryName: "PDBHDatabases"
+  # Where should all databases be held
+  # If you have pre-existing databases do NOT change this, they will disapear
+  # Default: "PDBHDatabases"
+
+
+Networking:
+  pdbhNetworking: True
+  # Should PDBH make network requests, like to find the latest version number or...
+  # install tools when needed
+  # PDBH doesn't sell your data to chinese governments so I would leave this True
+  # Default: True
+  
+  pdbhNetworkingURL: "https://raw.githubusercontent.com/Englishexe/pdbhResources/main/"
+  # Do not change this, a prefix for PDBH to quickly find resources
+  # Seriously you WILL break stuff if this is changed
+  # Default: "https://raw.githubusercontent.com/Englishexe/pdbhResources/main/"
+
+
+Config:
+  configVersion: 0.0.1
+  # DO NOT CHANGE
+  # For updating script
