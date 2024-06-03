@@ -1,10 +1,10 @@
 # Main config file for PDBH
-# Find out more here: https://
+# Find out more here: https://www.github.com/Englishexe/pdbh/wiki
 Output:
   # Terminal outputs
 
   pdbhPrefix: "[PDBH] "
-  # The prefix before every PDBH message, this can be blank.
+  # The prefix before every PDBH message, can be blank.
   # Default: "[PDBH] "
   # Example: "[PDBH] Wrote data to database"
 
@@ -33,7 +33,7 @@ Output:
 Log:
   pdbhLogs: True
   # Should PDBH log all messages to a file
-  # Info,Error & Warning settings are ignored, all messages will log if this is True
+  # Info, Error & Warning settings are ignored, all messages will log if this is True
   # Default: True
 
 
@@ -51,7 +51,7 @@ Database:
 
   pdbhDatabaseDirectoryName: "PDBHDatabases"
   # Where should all databases be held
-  # If you have pre-existing databases do NOT change this, they will disapear
+  # If you have pre-existing databases do NOT change this, they will disappear
   # Default: "PDBHDatabases"
 
   pdbhExampleData: "[[['A'],['B'],['C'],['D']],[['Alpha1'],['Beta1'],['Charlie1'],['Delta1'],['Alpha2'],['Beta2'],['Charlie2'],['Delta2'],['Alpha3'],['Beta3'],['Charlie3'],['Delta3']]]"
@@ -60,18 +60,18 @@ Database:
   # Default: SEE WIKI
 
   pdbhFileSuffix: ".pdbh"
-  # What file 'extension' should pdbh store in, makes no diffrence really
-  # If you have pre-existing databases do NOT change this, they will disapear
+  # What file 'extension' should pdbh store in, makes no difference really
+  # If you have pre-existing databases do NOT change this, they will disappear
   # Default: ".pdbh"
 
 Networking:
   pdbhNetworking: True
   # Should PDBH make network requests, like to find the latest version number or...
   # install tools when needed
-  # PDBH doesn't sell your data to chinese governments so I would leave this True
+  # PDBH doesn't sell your data to Chinese governments so I would leave this True
   # Default: True
 
-  pdbhNetworkingURL: "https://raw.githubusercontent.com/Englishexe/pdbhResources/main/"
+  pdbhNetworkingURL: "68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f456e676c6973686578652f706462685265736f75726365732f6d61696e2f"
   # Do not change this, a prefix for PDBH to quickly find resources
   # Seriously you WILL break stuff if this is changed
   # Default: "https://raw.githubusercontent.com/Englishexe/pdbhResources/main/"
