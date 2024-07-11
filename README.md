@@ -1,2 +1,5 @@
-# pdbhResources
-This repository is for pdbh (Python DataBase Handler), it houses crucial values on the web so any pdbh instance can access it.
+# pdbhResources (PythonDataBaseHandler Resources)
+
+A repository for any PDBH instance (with an internet connection) to access, PDBH does NOT send data here but rather gathers data. Do not be alarmed if PDBH often makes network requests here.\
+### [PDBH Repository](https://www.github.com/Englishexe/pdbh)
+### [PDBH Wiki](https://www.github.com/Englishexe/pdbh/wiki)
